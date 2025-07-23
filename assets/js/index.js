@@ -4,7 +4,6 @@
  * @author Sebastián Gallegos Frías
  */
 
-
 /**
  * Función que obtiene una edad aleatoria entre 20 y 40 años.
  * 
@@ -36,4 +35,7 @@ console.log(`Mi edad fue asignada aleatoriamente: ${superheroe.edad}`);
 const nivelMaximo = Math.max(superheroe.nivelMin, superheroe.nivelMax);
 console.log(`El máximo de mis niveles de energía es: ${nivelMaximo}`);
 console.log(`Primera letra de mi nombre: ${superheroe.nombre[0].toUpperCase()}`);
-// TODO: añadir "nombre como objeto" y "nombre primitivo" con respecto al nombre.
+const nombrePrimitivo = superheroe.nombre;
+const nombreObjeto = new String(superheroe.nombre);
+console.log(`Tipo de dato del nombre: ${typeof nombrePrimitivo}`);
+console.log(`Tipo de dato del nombre como objeto: ${typeof nombreObjeto}`);
